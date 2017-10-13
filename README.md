@@ -24,7 +24,8 @@ Step 2. Add the dependency
 
 ```gradle
 dependencies {
-	compile 'com.github.zzyandzzy:SuperToast:0.0.2'
+	compile 'com.android.support:cardview-v7:26.+'
+	compile 'com.github.zzyandzzy:SuperToast:0.0.5'
 }
 ```
 
@@ -49,7 +50,7 @@ Step 2. Add the dependency
 <dependency>
     <groupId>com.github.zzyandzzy</groupId>
     <artifactId>SuperToast</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.5</version>
 </dependency>
 ```
 
@@ -89,9 +90,16 @@ if this library err,you should add the dependency
 
 ```gradle
 dependencies {
-	implementation 'com.android.support:cardview-v7:26.1.0'
+	compile 'com.android.support:cardview-v7:26.+'
 }
 ```
+
+Screenshots
+--------
+
+| Screenshot | Screenshot |  Screenshot | Screenshot|
+| --- | --- | --- | ---|
+| ![Info Toast][401] | ![Waring Toast][402] | ![Error Toast][403] | ![Elevation Toast][404]|
 
 ## Licence
 ```licence
@@ -121,5 +129,9 @@ SOFTWARE.
 [101]: https://img.shields.io/github/license/HeinrichReimer/material-intro.svg
 [102]: https://mit-license.org/
 [103]: https://img.shields.io/jitpack/v/jitpack/maven-simple.svg
-[104]: https://jitpack.io/#zzyandzzy/SuperToast/0.0.2
+[104]: https://jitpack.io/#zzyandzzy/SuperToast/0.0.5
 [400]: https://github.com/zzyandzzy/SuperToast/blob/master/app/src/main/java/xyz/zzyandzzy/utility/supertoastdemo/MainActivity.java
+[401]: https://github.com/zzyandzzy/SuperToast/blob/master/art/info.png
+[402]: https://github.com/zzyandzzy/SuperToast/blob/master/art/waring.png
+[403]: https://github.com/zzyandzzy/SuperToast/blob/master/art/error.png
+[404]: https://github.com/zzyandzzy/SuperToast/blob/master/art/elevation.png
