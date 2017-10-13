@@ -82,6 +82,17 @@ this api can image gone
 ```java
 setImage(-1);
 ```
+
+### Run
+
+if this library err,you should add the dependency
+
+```gradle
+dependencies {
+	implementation 'com.android.support:cardview-v7:26.1.0'
+}
+```
+
 ## Licence
 ```licence
 MIT License
