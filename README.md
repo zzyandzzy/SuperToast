@@ -24,7 +24,7 @@ Step 2. Add the dependency
 
 ```gradle
 dependencies {
-	compile 'com.github.zzyandzzy:SuperToast:0.0.1'
+	compile 'com.github.zzyandzzy:SuperToast:0.0.2'
 }
 ```
 
@@ -121,5 +121,5 @@ SOFTWARE.
 [101]: https://img.shields.io/github/license/HeinrichReimer/material-intro.svg
 [102]: https://mit-license.org/
 [103]: https://img.shields.io/jitpack/v/jitpack/maven-simple.svg
-[104]: https://jitpack.io/#zzyandzzy/SuperToast/0.0.1
+[104]: https://jitpack.io/#zzyandzzy/SuperToast/0.0.2
 [400]: https://github.com/zzyandzzy/SuperToast/blob/master/app/src/main/java/xyz/zzyandzzy/utility/supertoastdemo/MainActivity.java
