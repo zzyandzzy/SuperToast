@@ -84,6 +84,10 @@ this api can image gone
 setImage(-1);
 ```
 
+### Animation
+
+you can use `ValueAnimator` , frist you should `getImageView()` !
+
 ### Run
 
 if this library err,you should add the dependency
@@ -97,7 +101,7 @@ dependencies {
 Screenshots
 --------
 
-| Screenshot | Screenshot |  Screenshot | Screenshot|
+| Info | Waring |  Error | Elevation|
 | --- | --- | --- | ---|
 | ![Info Toast][401] | ![Waring Toast][402] | ![Error Toast][403] | ![Elevation Toast][404]|
 
