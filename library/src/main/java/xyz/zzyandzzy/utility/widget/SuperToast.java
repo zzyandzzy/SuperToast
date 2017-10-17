@@ -52,6 +52,8 @@ public class SuperToast {
     }
 
     private void initData() {
+        mCardView.setRadius(SuperToastUtils.dip2px(mContext, 20));
+        mCardView.setCardElevation(2);
         mCardView.setCardBackgroundColor(SuperToastUtils.NORMAL_COLOR);
         mTextView.setTextColor(SuperToastUtils.DEFAULT_TEXT_COLOR);
 
