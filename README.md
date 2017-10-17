@@ -25,7 +25,7 @@ Step 2. Add the dependency
 ```gradle
 dependencies {
 	compile 'com.android.support:cardview-v7:26.+'
-	compile 'com.github.zzyandzzy:SuperToast:0.0.5'
+	compile 'com.github.zzyandzzy:SuperToast:0.0.6'
 }
 ```
 
@@ -50,7 +50,7 @@ Step 2. Add the dependency
 <dependency>
     <groupId>com.github.zzyandzzy</groupId>
     <artifactId>SuperToast</artifactId>
-    <version>0.0.5</version>
+    <version>0.0.6</version>
 </dependency>
 ```
 
