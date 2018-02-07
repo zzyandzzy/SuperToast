@@ -35,6 +35,12 @@ public class SuperToast {
     private static final int SHORT_DURATION = 2500;
     private static final int LONG_DURATION = 3000;
 
+    public static final int NORMAL = 0;
+    public static final int INFO = 1;
+    public static final int SUCCESS = 2;
+    public static final int WARNING = 3;
+    public static final int ERROR = 4;
+
     private boolean isSetRadis;
 
     public SuperToast(@NonNull Context context) {
@@ -85,16 +91,9 @@ public class SuperToast {
         return superToast;
     }
 
-    @CheckResult
-    public static SuperToast make(@NonNull Context context, @NonNull CharSequence text, @NonNull SuperToastType type) {
-        SuperToast superToast = make(context);
-        superToast.setText(text);
-        superToast.setType(type);
-        return superToast;
-    }
 
     @CheckResult
-    public static SuperToast make(@NonNull Context context, @NonNull CharSequence text, int duration, @NonNull SuperToastType type) {
+    public static SuperToast make(@NonNull Context context, @NonNull CharSequence text, int duration, int type) {
         SuperToast superToast = make(context);
         superToast.setText(text);
         superToast.setDuration(duration);
@@ -102,14 +101,6 @@ public class SuperToast {
         return superToast;
     }
 
-    @CheckResult
-    public static SuperToast make(@NonNull Context context, @NonNull CharSequence text, @ColorInt int color, @DrawableRes int res) {
-        SuperToast superToast = make(context);
-        superToast.setText(text);
-        superToast.setColor(color);
-        superToast.setImage(res);
-        return superToast;
-    }
 
     @CheckResult
     public static SuperToast make(@NonNull Context context, @NonNull CharSequence text, int duration, @ColorInt int color, @DrawableRes int res) {
@@ -134,22 +125,28 @@ public class SuperToast {
         }
     }
 
-    public void setType(@NonNull SuperToastType type) {
-        if (type == SuperToastType.NORMAL) {
-            mImageView.setImageResource(R.drawable.ic_sentiment_neutral_black_24dp);
-            mCardView.setCardBackgroundColor(SuperToastUtils.NORMAL_COLOR);
-        } else if (type == SuperToastType.INFO) {
-            mImageView.setImageResource(R.drawable.ic_info_outline_black_24dp);
-            mCardView.setCardBackgroundColor(SuperToastUtils.INFO_COLOR);
-        } else if (type == SuperToastType.SUCCESS) {
-            mImageView.setImageResource(R.drawable.ic_check_black_24dp);
-            mCardView.setCardBackgroundColor(SuperToastUtils.SUCCESS_COLOR);
-        } else if (type == SuperToastType.WARNING) {
-            mImageView.setImageResource(R.drawable.ic_error_outline_black_24dp);
-            mCardView.setCardBackgroundColor(SuperToastUtils.WARNING_COLOR);
-        } else if (type == SuperToastType.ERROR) {
-            mImageView.setImageResource(R.drawable.ic_close_black_24dp);
-            mCardView.setCardBackgroundColor(SuperToastUtils.ERROR_COLOR);
+    public void setType(int type) {
+        switch (type) {
+            case NORMAL:
+                mImageView.setImageResource(R.drawable.ic_sentiment_neutral_black_24dp);
+                mCardView.setCardBackgroundColor(SuperToastUtils.NORMAL_COLOR);
+                break;
+            case INFO:
+                mImageView.setImageResource(R.drawable.ic_info_outline_black_24dp);
+                mCardView.setCardBackgroundColor(SuperToastUtils.INFO_COLOR);
+                break;
+            case SUCCESS:
+                mImageView.setImageResource(R.drawable.ic_check_black_24dp);
+                mCardView.setCardBackgroundColor(SuperToastUtils.SUCCESS_COLOR);
+                break;
+            case WARNING:
+                mImageView.setImageResource(R.drawable.ic_error_outline_black_24dp);
+                mCardView.setCardBackgroundColor(SuperToastUtils.WARNING_COLOR);
+                break;
+            case ERROR:
+                mImageView.setImageResource(R.drawable.ic_close_black_24dp);
+                mCardView.setCardBackgroundColor(SuperToastUtils.ERROR_COLOR);
+                break;
         }
     }
 

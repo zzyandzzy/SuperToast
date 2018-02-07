@@ -68,7 +68,7 @@ superToast.setImage(-1);
 superToast.setText("Text");
 ```
 
-**if you know more , in this** [MainActivity]([400])
+**if you know more , in this** [MainActivity][400]
 
 ## Tips
 

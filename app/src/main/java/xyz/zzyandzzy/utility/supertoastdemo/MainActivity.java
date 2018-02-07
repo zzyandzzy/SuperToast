@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 
 import xyz.zzyandzzy.utility.widget.SuperToast;
-import xyz.zzyandzzy.utility.widget.SuperToastType;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button bt1, bt2, bt3;
@@ -70,15 +69,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.main_button4:
                 superToast.setText("info");
-                superToast.setType(SuperToastType.INFO);
+                superToast.setType(SuperToast.INFO);
                 break;
             case R.id.main_button5:
                 superToast.setText("Waring");
-                superToast.setType(SuperToastType.WARNING);
+                superToast.setType(SuperToast.WARNING);
                 break;
             case R.id.main_button6:
                 superToast.setText("Error");
-                superToast.setType(SuperToastType.ERROR);
+                superToast.setType(SuperToast.ERROR);
                 break;
             case R.id.main_button7:
                 superToast.setText("LongTime");

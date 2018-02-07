@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SuperToastDemo.iml" filepath="$PROJECT_DIR$/SuperToastDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SuperToast.iml" filepath="$PROJECT_DIR$/SuperToast.iml" />
+      <module fileurl="file://D:\1128\Android\projects\SuperToast\SuperToastDemo.iml" filepath="D:\1128\Android\projects\SuperToast\SuperToastDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\1128\Android\projects\SuperToast\app\app.iml" filepath="D:\1128\Android\projects\SuperToast\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://D:\1128\Android\projects\SuperToast\library\library.iml" filepath="D:\1128\Android\projects\SuperToast\library\library.iml" />
     </modules>
   </component>
 </project>
